@@ -18,8 +18,6 @@ type
     Rectangle9: TRectangle;
     Rectangle4: TRectangle;
     Rectangle5: TRectangle;
-    Rectangle6: TRectangle;
-    Rectangle7: TRectangle;
     Rectangle8: TRectangle;
     Rectangle10: TRectangle;
     Rectangle12: TRectangle;
