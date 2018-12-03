@@ -28,9 +28,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "E:\Work\MyFuto\照金景区\安装包\照金景区\ZJJQ.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Work\MyFuto\照金景区\安装包\照金景区\ZJJQ.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; Source: "E:\Work\MyFuto\照金景区\Bin\ZJJQ.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\Work\MyFuto\照金景区\安装包\照金景区\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Work\MyFuto\照金景区\安装包\照金景区\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
