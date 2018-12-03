@@ -1,0 +1,38 @@
+inherited FrmTabsBase: TFrmTabsBase
+  Caption = 'FrmBase1'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Transparency = True
+  FullScreen = True
+  DesignerMasterStyle = 0
+  inherited raImage: TRectangle
+    Size.Width = 1920.000000000000000000
+    Size.Height = 1080.000000000000000000
+  end
+  object tcPage: TTabControl [1]
+    Align = Client
+    Size.Width = 1920.000000000000000000
+    Size.Height = 1080.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = Dots
+    Sizes = (
+      1920s
+      1080s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+    end
+  end
+end

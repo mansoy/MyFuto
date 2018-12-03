@@ -1,0 +1,16 @@
+inherited Frm2020000: TFrm2020000
+  Caption = 'FrmBase3'
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    Sizes = (
+      1920s
+      1054s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  inherited raGoBack: TRectangle
+    OnClick = nil
+  end
+end

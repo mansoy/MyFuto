@@ -1,0 +1,12 @@
+inherited FrmLastPage: TFrmLastPage
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    Sizes = (
+      1920s
+      1054s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,51 @@
+inherited Frm4020000: TFrm4020000
+  Caption = 'FrmTouch01Base1'
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    Sizes = (
+      1920s
+      1080s
+      1920s
+      1080s
+      1920s
+      1080s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited raImage: TRectangle
+        inherited raGoBack: TRectangle
+          Position.X = 1614.000000000000000000
+          Position.Y = 850.000000000000000000
+          Size.Width = 206.000000000000000000
+          Size.Height = 206.000000000000000000
+          XRadius = 103.000000000000000000
+          YRadius = 103.000000000000000000
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem3'
+    end
+  end
+end

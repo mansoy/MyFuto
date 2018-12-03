@@ -1,0 +1,11 @@
+inherited FrmSingleBase: TFrmSingleBase
+  Caption = 'FrmBase1'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  FullScreen = True
+  DesignerMasterStyle = 0
+  inherited raImage: TRectangle
+    Size.Width = 1920.000000000000000000
+    Size.Height = 1080.000000000000000000
+  end
+end

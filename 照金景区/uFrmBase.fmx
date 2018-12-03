@@ -1,0 +1,44 @@
+object FrmBase: TFrmBase
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form3'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Position = ScreenCenter
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object tcPage: TTabControl
+    Align = Client
+    Size.Width = 1920.000000000000000000
+    Size.Height = 1080.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+  end
+  object ActionList1: TActionList
+    Left = 1184
+    Top = 176
+    object actPriorPage: TAction
+      OnExecute = actPriorPageExecute
+    end
+    object actNextPage: TAction
+      OnExecute = actNextPageExecute
+    end
+    object actMainPage: TAction
+      Text = 'actMainPage'
+      OnExecute = actMainPageExecute
+    end
+    object ActOpenNextPage: TAction
+      Text = 'ActOpenNextPage'
+      OnExecute = ActOpenNextPageExecute
+    end
+  end
+end

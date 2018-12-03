@@ -1,0 +1,170 @@
+object FrmEditorText: TFrmEditorText
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = #25551#36848#25991#23383#32534#36753#22120
+  ClientHeight = 470
+  ClientWidth = 850
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    AutoSize = True
+    Position.X = 16.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = #23383#20307#21517#31216
+  end
+  object memText: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      #36825#26159#27979#35797#26174#31034#30340#25991#23383
+      '123ABCabc!~@#')
+    StyledSettings = [Style]
+    TextSettings.Font.Family = 'Consolas'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnChangeTracking = memTextChangeTracking
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 820.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 816.000000000000000000
+    Viewport.Height = 165.000000000000000000
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Position.X = 234.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = #23383#20307#22823#23567
+  end
+  object nbFontSize: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Cursor = crIBeam
+    Min = 9.000000000000000000
+    Max = 500.000000000000000000
+    Value = 20.000000000000000000
+    Position.X = 289.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 130.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = cbeFontFamilyChange
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Position.X = 442.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = #23383#20307#39068#33394
+  end
+  object cbeFontFamily: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    DropDownCount = 20
+    ItemHeight = 19.000000000000000000
+    ItemWidth = 150.000000000000000000
+    ItemIndex = -1
+    Position.X = 72.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 130.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = cbeFontFamilyChange
+    OnClosePopup = cbeFontFamilyChange
+  end
+  object btnCancel: TButton
+    Anchors = [akRight, akBottom]
+    ModalResult = 2
+    Position.X = 755.000000000000000000
+    Position.Y = 417.000000000000000000
+    TabOrder = 10
+    Text = #21462#28040
+  end
+  object btnSave: TButton
+    Anchors = [akRight, akBottom]
+    Position.X = 665.000000000000000000
+    Position.Y = 417.000000000000000000
+    TabOrder = 9
+    Text = #20445#23384
+    OnClick = btnSaveClick
+  end
+  object raDisplay: TRectangle
+    Position.X = 16.000000000000000000
+    Position.Y = 296.000000000000000000
+    Sides = []
+    Size.Width = 820.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    object txtDisplay: TText
+      AutoSize = True
+      Position.X = 152.000000000000000000
+      Position.Y = 26.000000000000000000
+      Size.Width = 263.639312744140600000
+      Size.Height = 49.814453125000000000
+      Size.PlatformDefault = False
+      Text = #36825#26159#27979#35797#26174#31034#30340#25991#23383'1111111'#13#10'123ABCabc!~@#'
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Trimming = Character
+      TextSettings.WordWrap = False
+      TextSettings.HorzAlign = Leading
+    end
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Position.X = 650.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = #32972#26223#39068#33394
+  end
+  object chkTransparentBackground: TCheckBox
+    Position.X = 17.000000000000000000
+    Position.Y = 51.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = #20351#29992#36879#26126#32972#26223
+    OnChange = chkTransparentBackgroundChange
+  end
+  object raFontColor: TRectangle
+    Position.X = 496.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = raFontColorClick
+  end
+  object rabackColor: TRectangle
+    Position.X = 704.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = raFontColorClick
+  end
+  object dxColorDialog1: TdxColorDialog
+    Options.ColorPicker.DefaultVisible = True
+    Left = 728
+    Top = 48
+  end
+end

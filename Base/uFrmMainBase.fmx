@@ -1,0 +1,24 @@
+object FrmMainBase: TFrmMainBase
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  Fill.Bitmap.WrapMode = Tile
+  Fill.Kind = Bitmap
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object ActionList1: TActionList
+    Left = 592
+    Top = 8
+    object ActOpenPage: TAction
+      Text = #25171#24320#19968#20010#31383#21475
+      OnExecute = ActOpenPageExecute
+    end
+  end
+end

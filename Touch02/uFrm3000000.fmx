@@ -1,0 +1,20 @@
+object Frm3000000: TFrm3000000
+  Left = 0
+  Top = 0
+  Caption = #24453#26426#30028#38754
+  ClientHeight = 480
+  ClientWidth = 640
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    OnMouseDown = Rectangle1MouseDown
+  end
+end

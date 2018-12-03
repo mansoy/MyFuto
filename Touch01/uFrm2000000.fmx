@@ -1,0 +1,86 @@
+inherited Frm2000000: TFrm2000000
+  Caption = 'FrmBase1'
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    TabPosition = None
+    Sizes = (
+      1920s
+      1080s)
+    inherited TabItem1: TTabItem
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited raImage: TRectangle
+        Fill.Kind = Bitmap
+        Size.Height = 1080.000000000000000000
+      end
+      object Rectangle4: TRectangle
+        Tag = 3010000
+        Fill.Kind = None
+        Position.X = 143.000000000000000000
+        Position.Y = 789.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+      end
+      object Rectangle1: TRectangle
+        Tag = 3020000
+        Fill.Kind = None
+        Position.X = 442.000000000000000000
+        Position.Y = 789.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+      end
+      object Rectangle2: TRectangle
+        Tag = 3030000
+        Fill.Kind = None
+        Position.X = 737.000000000000000000
+        Position.Y = 788.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+      end
+      object Rectangle3: TRectangle
+        Tag = 3040000
+        Fill.Kind = None
+        Position.X = 1047.000000000000000000
+        Position.Y = 787.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+      end
+      object raPlayVideo: TRectangle
+        Cursor = crHandPoint
+        Fill.Kind = None
+        Position.X = 1345.000000000000000000
+        Position.Y = 786.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+        OnClick = raPlayVideoClick
+      end
+      object raGoBack: TRectangle
+        Fill.Kind = None
+        Position.X = 1631.000000000000000000
+        Position.Y = 786.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 110.000000000000000000
+        YRadius = 110.000000000000000000
+      end
+    end
+  end
+end

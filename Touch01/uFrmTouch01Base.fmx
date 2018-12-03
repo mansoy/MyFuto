@@ -1,0 +1,30 @@
+inherited FrmTouch01Base: TFrmTouch01Base
+  Caption = 'FrmBase1'
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    TabPosition = Dots
+    Sizes = (
+      1920s
+      1080s)
+    inherited TabItem1: TTabItem
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited raImage: TRectangle
+        Fill.Kind = Bitmap
+        Size.Height = 1080.000000000000000000
+        object raGoBack: TRectangle
+          Fill.Kind = None
+          Position.X = 1712.000000000000000000
+          Position.Y = 904.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 169.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 75.000000000000000000
+          YRadius = 75.000000000000000000
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2C3B000F-DE2E-48C3-9292-EB563E4FAE54}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Touch02\汉语中的车马器.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="芮器铭文\芮器铭文.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Touch01\酵素城.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="饰棺之仪\饰棺之仪.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="芮氏宗词\芮氏宗词.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="汉语中的车马器">
+        <MSBuild Projects="Touch02\汉语中的车马器.dproj"/>
+    </Target>
+    <Target Name="汉语中的车马器:Clean">
+        <MSBuild Projects="Touch02\汉语中的车马器.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="汉语中的车马器:Make">
+        <MSBuild Projects="Touch02\汉语中的车马器.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="芮器铭文">
+        <MSBuild Projects="芮器铭文\芮器铭文.dproj"/>
+    </Target>
+    <Target Name="芮器铭文:Clean">
+        <MSBuild Projects="芮器铭文\芮器铭文.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="芮器铭文:Make">
+        <MSBuild Projects="芮器铭文\芮器铭文.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="酵素城">
+        <MSBuild Projects="Touch01\酵素城.dproj"/>
+    </Target>
+    <Target Name="酵素城:Clean">
+        <MSBuild Projects="Touch01\酵素城.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="酵素城:Make">
+        <MSBuild Projects="Touch01\酵素城.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="饰棺之仪">
+        <MSBuild Projects="饰棺之仪\饰棺之仪.dproj"/>
+    </Target>
+    <Target Name="饰棺之仪:Clean">
+        <MSBuild Projects="饰棺之仪\饰棺之仪.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="饰棺之仪:Make">
+        <MSBuild Projects="饰棺之仪\饰棺之仪.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="芮氏宗词">
+        <MSBuild Projects="芮氏宗词\芮氏宗词.dproj"/>
+    </Target>
+    <Target Name="芮氏宗词:Clean">
+        <MSBuild Projects="芮氏宗词\芮氏宗词.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="芮氏宗词:Make">
+        <MSBuild Projects="芮氏宗词\芮氏宗词.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="汉语中的车马器;芮器铭文;酵素城;饰棺之仪;芮氏宗词"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="汉语中的车马器:Clean;芮器铭文:Clean;酵素城:Clean;饰棺之仪:Clean;芮氏宗词:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="汉语中的车马器:Make;芮器铭文:Make;酵素城:Make;饰棺之仪:Make;芮氏宗词:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

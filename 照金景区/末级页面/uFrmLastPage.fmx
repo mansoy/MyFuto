@@ -1,0 +1,56 @@
+inherited FrmLastPage: TFrmLastPage
+  Caption = #26368#21518#19968#32423#39029#38754'('#19981#20250#26377#19979#19968#32423#21035#30340#39029#38754')'
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    TabPosition = None
+    Sizes = (
+      1920s
+      1080s)
+    object tiPage: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiPage'
+      object rectPage: TRectangle
+        Align = Client
+        Fill.Bitmap.WrapMode = Tile
+        Fill.Kind = Bitmap
+        Size.Width = 1920.000000000000000000
+        Size.Height = 1080.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+  end
+  object rectMainPage: TRectangle [1]
+    Fill.Kind = None
+    Position.X = 1761.000000000000000000
+    Position.Y = 940.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 63.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object rectNextPage: TRectangle [2]
+    Fill.Kind = None
+    Position.X = 1666.000000000000000000
+    Position.Y = 940.000000000000000000
+    Size.Width = 59.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object rectPriorPage: TRectangle [3]
+    Fill.Kind = None
+    Position.X = 1562.000000000000000000
+    Position.Y = 940.000000000000000000
+    Size.Width = 59.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

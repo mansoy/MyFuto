@@ -1,0 +1,57 @@
+inherited Frm3010000: TFrm3010000
+  Caption = 'FrmBase4'
+  DesignerMasterStyle = 0
+  inherited tcPage: TTabControl
+    Sizes = (
+      1920s
+      1080s)
+    inherited TabItem1: TTabItem
+      Text = #28205#21335
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited raImage: TRectangle
+        inherited raGoBack: TRectangle
+          Position.X = 1615.000000000000000000
+          Position.Y = 851.000000000000000000
+          Size.Width = 206.000000000000000000
+          Size.Height = 206.000000000000000000
+          XRadius = 103.000000000000000000
+          YRadius = 103.000000000000000000
+        end
+      end
+      object Rectangle4: TRectangle
+        Tag = 4010002
+        Fill.Kind = None
+        Position.X = 1311.000000000000000000
+        Position.Y = 852.000000000000000000
+        Size.Width = 206.000000000000000000
+        Size.Height = 206.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 103.000000000000000000
+        YRadius = 103.000000000000000000
+      end
+      object Rectangle5: TRectangle
+        Tag = 4010001
+        Fill.Kind = None
+        Position.X = 1005.000000000000000000
+        Position.Y = 853.000000000000000000
+        Size.Width = 206.000000000000000000
+        Size.Height = 206.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 103.000000000000000000
+        YRadius = 103.000000000000000000
+      end
+      object Rectangle6: TRectangle
+        Tag = 4010000
+        Fill.Kind = None
+        Position.X = 699.000000000000000000
+        Position.Y = 852.000000000000000000
+        Size.Width = 206.000000000000000000
+        Size.Height = 206.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 103.000000000000000000
+        YRadius = 103.000000000000000000
+      end
+    end
+  end
+end

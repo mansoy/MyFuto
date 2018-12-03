@@ -1,0 +1,62 @@
+object FrmTouchBase: TFrmTouchBase
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  OnMouseUp = FormMouseUp
+  DesignerMasterStyle = 0
+  object raGoBack: TRectangle
+    Fill.Kind = None
+    Position.X = 1729.000000000000000000
+    Position.Y = 899.000000000000000000
+    Size.Width = 115.000000000000000000
+    Size.Height = 115.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object raPriorPage: TRectangle
+    Fill.Kind = None
+    Position.X = 73.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object raNextPage: TRectangle
+    Fill.Kind = None
+    Position.X = 1738.000000000000000000
+    Position.Y = 383.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ActionList1: TActionList
+    Left = 1480
+    Top = 152
+    object actAction: TAction
+      Text = 'actAction'
+      OnExecute = actActionExecute
+    end
+    object actGoBack: TAction
+      Text = 'actGoBack'
+      OnExecute = actGoBackExecute
+    end
+    object actNextPage: TAction
+      Text = 'actNextPage'
+      OnExecute = actNextPageExecute
+    end
+    object actPriorPage: TAction
+      Text = 'actPriorPage'
+      OnExecute = actPriorPageExecute
+    end
+  end
+end

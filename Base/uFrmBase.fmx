@@ -1,0 +1,48 @@
+object FrmBase: TFrmBase
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object raImage: TRectangle
+    Align = Client
+    Fill.Bitmap.WrapMode = Tile
+    Fill.Kind = Bitmap
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    OnMouseDown = raImageMouseDown
+    OnMouseUp = raImageMouseUp
+  end
+  object ActionList1: TActionList
+    Left = 88
+    object actPriorPage: TAction
+      Text = #19978#19968#39029
+      OnExecute = actPriorPageExecute
+    end
+    object actNextPage: TAction
+      Text = #19979#19968#39029
+      OnExecute = actNextPageExecute
+    end
+    object actMainPage: TAction
+      Text = #36820#22238#21040#20027#39029
+      OnExecute = actMainPageExecute
+    end
+    object ActOpenPage: TAction
+      Text = #25171#24320#19968#20010#31383#21475
+      OnExecute = ActOpenPageExecute
+    end
+    object actGoBack: TAction
+      Text = #36820#22238
+      OnExecute = ActGoBackExecute
+    end
+  end
+end

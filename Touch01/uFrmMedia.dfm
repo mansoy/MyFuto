@@ -1,0 +1,43 @@
+object FrmMedia: TFrmMedia
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'FrmMedia'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MediaPlayer1: TMediaPlayer
+    Left = 56
+    Top = 32
+    Width = 253
+    Height = 30
+    DoubleBuffered = True
+    Visible = False
+    ParentDoubleBuffered = False
+    TabOrder = 0
+    OnNotify = MediaPlayer1Notify
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1920
+    Height = 1080
+    Align = alClient
+    Caption = 'Panel1'
+    TabOrder = 1
+    OnClick = Panel1Click
+  end
+end
